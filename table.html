@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        }
+        table{
+            width: 100%;
+        }
+        th{
+            text-align: center;
+            background-color: aqua;
+            border-radius: 5px;
+        }
+        tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+        }
+        div{
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 5px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <div >
+        <table  id="table1" cellspacing="0" cellpadding="4">
+            <tr>
+                <th width="35%">Name</th>
+                <th width="35%">Price</th>
+                <th width="30%">Qty</th>
+            </tr>
+            <tr>
+                <td>LG Monitor@23</td>
+                <td>12000</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Acer UPS@90</td>
+                <td>9000</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>HP Printer</td>
+                <td>8400</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <table cellspacing="0" cellpadding="4">
+                    <tr>
+                        <th>Student name</th>
+                        <th>Hindi Marks</th>
+                        <th>English Marks</th>
+                        <th>Science Marks</th>
+                        <th>SST Marks</th>
+                        <th>Math Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Pankaj Singh</td>
+                        <td>89</td>
+                        <td>88</td>
+                        <td>43</td>
+                        <td>90</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>Ajay Prasad</td>
+                        <td>90</td>
+                        <td>23</td>
+                        <td>87</td>
+                        <td>65</td>
+                        <td>92</td>
+                    </tr>
+                </table>
+            </tr>
+            <tr>
+                <table cellspacing="0" cellpadding="0" >
+                    <tr>
+                        <th width="25%" style="border-bottom: none;" ></th>
+                        <th width="50%" >Average</th>
+                        <th width="25%" >Red eyes</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td cellpadding="0" >
+                            <table cellspacing="0" cellpadding="4" >
+                                <tr>
+                                    <th width="" >height</th>
+                                    <th width="" >weight</th>
+                                </tr>
+                            </table>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">Males</td>
+                        <td>
+                            <table cellspacing="0" cellpadding="4">
+                                <tr>
+                                    <td>1.9m</td>
+                                    <td>45kg</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td colspan="1">40%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">Females</td>
+                        <td>
+                            <table cellspacing="0" cellpadding="4">
+                                <tr>
+                                    <td>1.7m</td>
+                                    <td>80kg</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td colspan="1">43%</td>
+                    </tr>
+                </table>
+            </tr>
+            <tr>
+                <table cellspacing="0">
+                    <tr>
+                        <th>65</th>
+                        <th>40</th>
+                        <th>20</th>
+                    </tr>
+                    <tr>
+                        <table cellspacing="0">
+                            <tr>
+                                <th>Men</th>
+                                <th>Women</th>
+                                <th>Men</th>
+                                <th>Women</th>
+                                <th>Men</th>
+                                <th>Women</th>
+                            </tr>
+                            <tr>
+                                <td>82</td>
+                                <td>85</td>
+                                <td>78</td>
+                                <td>82</td>
+                                <td>77</td>
+                                <td>81</td>
+                            </tr>
+                        </table>
+                    </tr>
+                </table>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form ✅</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        video{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -30;
+            opacity: 0.9;
+        }
+        form{ 
+            width: 80%;
+            margin: 25px auto;
+        }
+        form{
+    backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    width: 50%;
+    padding: 0 15px;
+        }
+        form, fieldset{
+            border: none;
+        }
+        label{
+            color: white;
+            font-size: 20px;
+        }
+        input,select ,textarea{
+            padding: 5px;
+            border-radius: 10px;
+            display: block;
+            margin: 10px 5px;
+        }
+        h2{
+            color: white;
+        }
+
+        input[type=submit] {
+            width: 100px;
+            padding: 10px 25px;
+            font-weight: 600;
+            font-size: 15px;
+            text-transform: uppercase;
+            background-color: orange;
+            float:right;
+        }
+        input[type=checkbox], input[type=radio] {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop >
+        <source  src="data/bg-vid3.mp4">
+    </video>
+   <h1 style="color: red; background-color: black; margin:0; height: 50px; padding-top: 5px;font-family:'Courier New', Courier, monospace; letter-spacing: 2px;" align="center">Forms</h1>
+    
+    <div>
+        <h2 align="center">Form 1</h2>
+        <form id="1">
+            <fieldset>
+                <fieldset>
+                    <label for="">First Name: </label>
+                    <input placeholder="Enter Your First Name..."
+                        type="text"
+                        id="firstName"
+                        required />
+        
+                    <label for="">Last Name: </label>
+                    <input type="text"
+                        id="lastName"
+                        placeholder="Enter Your Last Name..."
+                        required />
+                </fieldset>
+        
+                <fieldset>
+                    <label for="email">Email id: </label>
+                    <input placeholder="example@gmail.com"
+                        type="email"
+                        id="email"
+                        required />
+        
+                    <label for="">Mobile Number: </label>
+                    <input type="tel"
+                        name="phone"
+                        id="phone"
+                        required>
+                </fieldset>
+                <!-- school -->
+                <fieldset>
+                    <label for="optionschool">School</label>
+                    <select name="optionschool"
+                            id="optionschool">
+                        <option value="none"
+                                selected>--Select A School--</option>
+                        <option value="blossom">Blossom School</option>
+                        <option value="xavier">St. Xavier’s High School</option>
+                        <option value="centerpoint">Centre Point School International</option>
+                        <option value="modern">Modern School, Nagpur</option>
+                        <option value="bkvv">Bharti Krishna Vidhya Vihar</option>
+                    </select>
+                </fieldset>
+        
+                <fieldset>
+                    <label for="radioSchool">Choose a School:</label><br>
+                    <input type="radio"
+                        name="school"
+                        id="school"><label>Blossom School</label><br>
+                    <input type="radio"
+                        name="school"
+                        id="school"><label>St. Xavier’s High School</label><br>
+                    <input type="radio"
+                        name="school"
+                        id="school"><label>Centre Point School International</label><br>
+                    <input type="radio"
+                        name="school"
+                        id="school"><label>Modern School, Nagpur</label><br>
+                    <input type="radio"
+                        name="school"
+                        id="school"><label>Bharti Krishna Vidhya Vihar</label><br>
+                </fieldset>
+        
+                <fieldset>
+                    <label for="about">
+                        About Me:
+                    </label><br>
+                    <textarea placeholder="Write something about yourself..."
+                            name="about"
+                            id="about"
+                            cols="60"
+                            rows="6"></textarea>
+                </fieldset>
+        
+                <input type="submit"
+                    name="sign_up"
+                    value="Sign up">
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <h2 align="center">Form 2</h2>
+        <form>
+            <fieldset>
+                <label for="studentName" >Student Name</label>
+                <input type="text" placeholder="Enter Student Name..." name="studentName" id="studentName" />
+    
+                <label for="fatherName">Father Name</label>
+                <input type="text" name="fatherName" id="fatherName">
+            </fieldset>
+            <fieldset>
+                <label for="dob">Date of birth</label>
+                <input type="date" name="dob" id="dob">
+    
+                <label for="number">Mobile Number</label>
+                <input type="number" name="number" id="number">
+            </fieldset>
+            <fieldset>
+                <label for="localadd">Local Address</label><br>
+                <textarea name="localadd" id="localadd" placeholder="Enter your Local Address" cols="60" rows="5" ></textarea><br>
+    
+                <label for="permanentadd">Permanent Address</label><br>
+                <textarea name="permanentadd" id="permanentadd" placeholder="Enter your Permanent Address" cols="60" rows="5" ></textarea>
+            </fieldset>
+    
+            <fieldset>
+                <label>Choose Religion</label>
+                <select>
+                    <option value="none" selected >--Select A Religion--</option>
+                    <option value="1">Theism</option>
+                    <option value="2">Animism</option>
+                    <option value="3">Totemism</option>
+                    <option value="4">The New Age</option>
+                </select>
+            </fieldset>
+    
+            <fieldset>
+                <label for="card">Card Details</label>
+    
+                <label for="cardName">Name on Debit Card</label>
+                <input type="text" name="cardName" id="cardName">
+    
+                <label for="debitNo">Card Number</label>
+                <input type="number" name="debitNo" id="debitNo">
+    
+                <label for="cvv">CVV</label>
+                <input type="number" name="cvv" id="cvv">
+            </fieldset>
+            <fieldset>
+                <label for="color">Pick Your Favorite Color</label>
+                <input type="color" name="color" id="color"><br>
+    
+                <label for="food">Food</label><br>
+                <input type="checkbox" name="" ><label>Pav Bhaji</label><br>
+                <input type="checkbox" name="" ><label>Paneer butter Masala</label><br>
+                <input type="checkbox" name="" ><label>Chole Bhature</label><br>
+                <input type="checkbox" name="" ><label>Masala Dosa</label><br>
+            </fieldset>
+               
+            <fieldset>
+                <label>User Profile</label>
+                <input type="file" name="" id="">
+    
+                <label for="email">Email id: </label>
+                <input placeholder="example@gmail.com"
+                       type="email"
+                       id="email2"
+                       required />
+    
+            </fieldset>
+    
+            <fieldset>
+                <label for="car">Favorite Cars: </label><br>
+                <input type="checkbox" /><label for="">Rolls-Royce Sweptail</label><br>
+                <input type="checkbox" /><label for="">Bugatti Divo</label><br>
+                <input type="checkbox" /><label for="">Mercedes-Maybach Exelero</label><br>
+                <input type="checkbox" /><label for="">SP Automotive Chaos</label><br>
+                <input type="checkbox" /><label for="">Other</label><br>
+            </fieldset>
+    
+            <fieldset>
+                <label>Country</label>
+                <input placeholder="Enter your country" type="text">
+    
+                <label for="">State</label>
+                <input placeholder="Enter your state" type="text" name="" id=""><br><br>
+    
+                <label>Feedback Message</label><br>
+                <textarea placeholder="Write your feedback" name="" id="" cols="60" rows="3"></textarea>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
